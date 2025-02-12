@@ -81,7 +81,27 @@
     animation: float 3s ease-in-out infinite;
   }
   
-  
+  .yippie-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #ff1493;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(255, 20, 147, 0.8);
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+  }
     
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
 

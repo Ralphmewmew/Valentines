@@ -35,7 +35,23 @@ for (var i=0; i < numberOfEmojis; i++) { //
 }
 };
 
+function showYippie() {
+    var yippie = document.createElement("div");
+    yippie.textContent = "Yippie!!";
+    yippie.classList.add("yippie-text");
+
+    document.body.appendChild(yippie);
+
+    setTimeout(function() {
+        yippie.remove();
+    }, 3000); // remove yippie after 3 seconds
+}
+
 document.getElementById("noBtn").addEventListener("mouseover", moveButton); // Corrected "documemt" to "document"
 document.getElementById("noBtn").addEventListener("touchstart", moveButton); 
 
-document.querySelector(".yesBtn").addEventListener("click", showFlowers);
+document.querySelector(".yesBtn").addEventListener("click", function() {
+    showFlowers();
+    showYippie();
+});
+alert('Script Loaded!');
