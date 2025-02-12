@@ -1,0 +1,87 @@
+    body {
+       width: 100%;
+       height: 100vh;
+       margin: 0; 
+       background-color: #fffffffd;
+       color: #f72153;
+       font-family: tahoma;
+       font-size: 16px;
+    }
+    .header {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 32px;
+        background-color: #e63c3c;
+        color: #ffffff;
+        border-bottom: 4px solid #bb00ff;;
+    }
+
+    h1 {
+        margin: 1em auto;
+        text-align: center;
+        font-family: cloud-script;
+        font-size: 3em
+    }
+
+    p {
+        margin: 1em auto;
+        text-align: center;
+        font-size: 1.8em;
+        font-family: cloud-script;
+    }
+  
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .yesBtn, .noBtn {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-decoration: none;
+        outline: none;
+        background-color: #e41d48;;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        cursor: pointer; 
+        text-align: center;
+        margin: 0 25px;
+       
+    }
+  
+    .yesBtn:hover, .noBtn:hover {
+      background-color: #3e8e41;
+      
+    }
+  
+    .yesBtn:active, .noBtn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform : translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+  
+  .floating-emoji {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  
+    
+
+
